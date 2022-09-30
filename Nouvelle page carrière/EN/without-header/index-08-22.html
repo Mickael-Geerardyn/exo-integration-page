@@ -1,0 +1,1067 @@
+<style>
+  /* *********************************************** */
+  /************* Styles css Begin Here  **************/
+  /* *************************************************/
+
+  :root {
+    --major-font-color: #333333;
+    --major-font-link-color: #0071BA;
+    --button-color-apply-exo: #008199;
+    --button-color-supplier: #222121;
+    --background-color-block-grey: #F1F3F4;
+    --font-color-button-block-grey: #F1F3F4;
+    --border-shadow-block: #F1F3F4;
+  }
+
+  button,
+  button:hover,
+  button:active,
+  button:focus,
+  button:visited {
+    background: none;
+  }
+
+  /****** fonts ******/
+  /****** typography ******/
+  /******** ROOT FONT SIZE : 10px = 1rem *******/
+  @charset "UTF-8";
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+  header h1 {
+    display: none;
+  }
+
+  .main--container {
+    font-family: "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    color: var(--major-font-color);
+  }
+
+  .main--container h1 {
+    font: bold 4.8rem/56px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--major-font-color);
+  }
+
+  @media screen and (max-width: 960px) {
+    .main--container h1 {
+      font: 800 4rem/50px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+  }
+
+  .main--container h1:first-letter {
+    text-transform: none;
+  }
+
+  .main--container h2 {
+    font: bold 3.8rem/40px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--major-font-color);
+  }
+
+  @media screen and (max-width: 960px) {
+    .main--container h2 {
+      font: 800 2.8rem/40px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+      padding-left: 0;
+    }
+  }
+
+  .main--container h3 {
+    font: bold 2.6rem/32px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    margin: 0;
+    color: var(--major-font-color);
+  }
+
+  @media screen and (max-width: 960px) {
+    .main--container h3 {
+      font: 700 2rem/32px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+      padding-left: 0;
+
+    }
+  }
+
+  .main--container h4 {
+    font: bold 2.2rem/28px "Montserrat", Arial, Tahoma, Verdana, sans-serif !important;
+    color: var(--major-font-color);
+  }
+
+  @media screen and (max-width: 960px) {
+    .main--container h4 {
+      font: 700 2rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+  }
+
+  .main--container h5 {
+    font: bold 1.8rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    color: var(--major-font-color);
+  }
+
+  .main--container h6 {
+    font: normal 2.4rem/32px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    margin: 0;
+    color: var(--major-font-color);
+  }
+
+  .main--container p {
+    font: normal 1.8rem/26px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    color: var(--major-font-color);
+  }
+
+  .main--container p strong {
+    font: 700 1.8rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    color: var(--major-font-color);
+  }
+
+  .main--container a {
+    font: bold 1.8rem/22px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    text-decoration: underline;
+    color: var(--major-font-link-color);
+  }
+
+  @media screen and (max-width: 960px) {
+    .main--container p {
+      font: 400 1.6rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+
+    .main--container p strong {
+      font: 700 1.6rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+      color: var(--major-font-color);
+    }
+
+    .main--container a {
+      font: bold 1.5rem/22px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+  }
+
+  .main--container p span {
+    text-decoration: underline;
+  }
+
+  /***** End fonts Typography *****/
+
+  /****** Main Section *******/
+  .main {
+    display: grid;
+    row-gap: 5rem;
+    padding: 2rem;
+  }
+
+  .main * {
+    margin: 0;
+  }
+
+  .block {
+    display: grid;
+  }
+
+  @media screen and (max-width: 960px) {
+    .main {
+      padding: 1.5rem;
+    }
+  }
+
+  /****** Block banner container section ******/
+  .block-banner--container {
+    row-gap: 4rem;
+  }
+
+  /****** Banner Section ******/
+  .main .block--banner {
+    width: 100%;
+  }
+
+  .main .block--banner .banner--img {
+    background-image: url("https://exo.quebec/Media/Default/images/carriere/Bann-Section-RH-1145x250-ANG.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 960px) {
+
+    .main .block--banner .banner--img {
+      background-image: url("https://exo.quebec/Media/Default/images/carriere/Bann-Section-RH-500x250-ANG.png");
+      background-size: cover;
+    }
+
+    .main .block--banner {
+      height: 20rem;
+    }
+
+    .main .block--banner .banner--img {
+      height: 100%;
+      background-size: contain;
+    }
+  }
+
+  /****** Banner title Section ******/
+  .block--title {
+    row-gap: 2rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    .block--title p {
+      font: 400 1.6rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+  }
+
+  /****** Block section container ******/
+  .block-section--container {
+    display: grid;
+    row-gap: 8rem;
+  }
+
+  /****** Apply exo Section ******/
+  .block--apply {
+    row-gap: 3rem;
+  }
+
+  .block--apply p {
+    font: normal 1.9rem/28px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+  }
+
+  .block--apply p strong {
+    font: bold 1.9rem/28px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+  }
+
+  .block--apply .block--apply-exo-container {
+    display: grid;
+    box-sizing: border-box;
+    padding: 2.8rem;
+    row-gap: 3rem;
+    border-radius: 2.4rem;
+    border: solid 0.1rem var(--border-shadow-block);
+    box-shadow: 0rem 0.6rem 1.4rem -0.6rem rgba(24, 39, 75, 0.12), 0rem 1rem 3.2rem -0.4rem rgba(24, 39, 75, 0.1);
+    text-align: center;
+  }
+
+  .block--apply-exo-container .block-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .block--apply-exo-container .block-container>div {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 3rem;
+  }
+
+  .block--apply-exo-container .block--text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .block--text p {
+    text-align: center;
+  }
+
+  .block--apply-exo-container .block--apply-exo-button {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .main--container .block--apply-exo-container a {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    border-radius: 1.2rem;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .block--apply-exo-container .first--button a {
+    color: #ffffff;
+    background-color: var(--button-color-apply-exo);
+    padding: 1.6rem 7.9rem;
+  }
+
+  .block--apply-exo-container .second--button a {
+    color: var(--button-color-apply-exo);
+    border: solid 0.2rem var(--button-color-apply-exo);
+    padding: 1.4rem 8rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    .block--apply h2 {
+      padding-right: 15rem;
+    }
+
+    .block--apply p {
+      font: normal 1.8rem/28px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+
+    .block--apply p strong {
+      font: 700 1.8rem/28px "Montserrat", Arial, Tahoma, Verdana, sans-serif;
+    }
+
+    .block--apply .block--apply-exo-container {
+      margin-bottom: 2rem;
+      padding: 2.5rem 2rem;
+    }
+
+    .block--apply-exo-container .block-container {
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+    }
+
+    .main--container .block--apply-exo-container a {
+      font-size: 1.6rem;
+      padding: 1.4rem 7rem;
+    }
+  }
+
+  /****** Apply suppliers section ******/
+
+  .block--apply-supplier-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .block-container--text {
+    display: grid;
+    row-gap: 2rem;
+    height: 100%;
+  }
+
+  .block--apply-supplier-container .block-container--grey {
+    border-radius: 1.2rem;
+    background-color: var(--background-color-block-grey);
+    padding: 2.4rem;
+  }
+
+  .block--apply-supplier-container a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: var(--font-color-button-block-grey);
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.6rem;
+    background-color: var(--button-color-supplier);
+    display: inline-block;
+  }
+
+  .block--apply-supplier-container .block--apply-supplier-button {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+
+  @media screen and (max-width: 960px) {
+    .block--apply-supplier-container {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+
+    .block--apply-supplier-container h4 {
+      font: 700 1.8rem/24px "Montserrat", Arial, Tahoma, Verdana, sans-serif !important;
+    }
+
+    .block--apply-supplier-container a {
+      font-size: 1.4rem;
+    }
+  }
+
+  /****** Advantages section ******/
+  .block-container--advantages {
+    row-gap: 5rem;
+  }
+
+  .block--advantage {
+    grid-template-columns: auto 1fr;
+  }
+
+  .advantages--container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .block--advantage {
+    column-gap: 2rem;
+  }
+
+  .block--advantage .advantage-image--container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block--advantage .calendar--image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .block--advantage .image-1 {
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/icone_exoleadership_50x50_Amenagement_flexible_du_travail.png');
+  }
+
+  .block--advantage .image-2 {
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/icone_exoleadership_50x50_Assurance_et_regime_de_retraite.png');
+  }
+
+  .block--advantage .image-3 {
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/icone_exoleadership_50x50_volet_sante_et_bien_etre.png');
+  }
+
+  .block--advantage .image-4 {
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/icone_exoleadership_50x50_comite_social.png');
+  }
+
+  .block--advantage .block--text-list li {
+    margin-left: 2rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    .advantages--container {
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
+    }
+
+    .block--advantage {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+    }
+
+    .block--advantage .calendar--image {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+
+  /****** Diversity section ******/
+  .block--diversity-container {
+    row-gap: 10rem;
+  }
+
+  .block--diversity-container .block--title {
+    row-gap: 4rem;
+  }
+
+  .block--diversity-container .block--carroussel-full-container {
+    grid-template-rows: 1fr auto;
+    row-gap: 1rem;
+  }
+
+  .block--diversity-container .block--carroussel-full-container .block--carroussel-container {
+    grid-template-columns: auto 1fr auto;
+    height: 30rem;
+  }
+
+  .block--diversity-container .block--carroussel-container #carroussel-js-data--container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .block--diversity-container .block--carroussel-container #js-data-container--animate {
+    position: absolute;
+    width: 100%;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+  }
+
+  .block--carroussel-container .carroussel-image-displayer {
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/Maxime-Kaci.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 32rem;
+    height: 23.2rem;
+  }
+
+  .carroussel-text-container figure {
+    display: grid;
+    row-gap: 3rem;
+    height: 100%;
+  }
+
+  .carroussel-text-container figure blockquote::before,
+  .carroussel-text-container figure blockquote::after {
+    display: none;
+  }
+
+  .carroussel-text-container blockquote p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    height: 100%;
+  }
+
+  .carroussel-text-container figcaption p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    height: 100%;
+  }
+
+  .block--carroussel-container .block--carroussel-arrow-previous button {
+    content: "";
+    display: block;
+    background-image: url("https://exo.quebec/Media/Default/images/carriere/exo_fleche.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 5rem;
+    align-self: center;
+    grid-column: 1 / 2;
+    rotate: 180deg;
+  }
+
+  .block--carroussel-container .block--carroussel-arrow-after button {
+    content: "";
+    display: block;
+    background-image: url("https://exo.quebec/Media/Default/images/carriere/exo_fleche.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 5rem;
+    align-self: center;
+    grid-column: 12 / 13;
+  }
+
+  .block--diversity-container .block--carroussel-point-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block--diversity-container .block--carroussel-point-container span {
+    background-color: #D9D9D9;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 0.4rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    .block--diversity-container .block--carroussel-full-container {
+      height: 60rem;
+      grid-template-rows: 1fr auto;
+      row-gap: 1rem;
+    }
+
+    .block--diversity-container .block--carroussel-full-container .block--carroussel-container {
+      grid-template-columns: 1fr;
+      padding: 0;
+      column-gap: 0;
+      height: 100%;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .block--carroussel-container .carroussel-image-container {
+      grid-column: none;
+    }
+
+    .block--carroussel-container .carroussel-image-displayer {
+      width: 100%
+    }
+
+    .block--carroussel-container .carroussel-text-container {
+      grid-column: none;
+    }
+
+    .carroussel-text-container blockquote p {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+    }
+
+    .carroussel-text-container figcaption p {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+
+    .block--carroussel-container .block--carroussel-arrow-previous {
+      margin-bottom: 1rem;
+    }
+
+    .block--carroussel-container .block--carroussel-arrow-after,
+    .block--carroussel-container .block--carroussel-arrow-previous {
+      justify-self: center;
+    }
+
+    .block--diversity-container .block--carroussel-container #js-data-container--animate {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      left: 0;
+    }
+  }
+
+  /****** Social section ******/
+  .block-social-container .block-social-image-container .block-social-image-displayer {
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/linkedin-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+    background-position: center;
+  }
+
+  .block-social-container .block-social-text-container {
+    row-gap: 4rem;
+  }
+
+  .block-social-container {
+    row-gap: 5rem;
+    border-radius: 2rem;
+    border: solid 0.1rem var(--border-shadow-block);
+    box-shadow: 0rem 0.6rem 0.8rem -0.6rem rgba(24, 39, 75, 0.12), 0rem 0.8rem 1.6rem -0.6rem rgba(24, 39, 75, 0.08);
+    padding: 4rem;
+  }
+
+  .block-social-link-container a {
+    text-decoration: none;
+    color: var(--button-color-apply-exo);
+    display: flex;
+  }
+
+  .block-social-link-container a::after {
+    content: '';
+    display: block;
+    background-image: url('https://exo.quebec/Media/Default/images/carriere/exo_fleche.svg');
+    background-position: center;
+    background-size: cover;
+    width: 4rem;
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    .block-social-container {
+      row-gap: 3rem;
+    }
+
+    .block-social-container .block-social-text-container {
+      row-gap: 2rem;
+    }
+  }
+</style>
+
+<!--
+  /*
+   * REPLACE THIS WITH NEW CONTENT
+   */
+  -->
+
+<main class="main main--container">
+
+  <!-- Header content -->
+  <div class="block block-banner--container">
+
+    <!-- BANNER -->
+    <div class="block block--banner" role="banner">
+      <div class="banner--img"></div>
+    </div>
+
+    <!-------- Text Header content  -------->
+    <div class="block block--title">
+      <h1>With exo, your career’s on track</h1>
+      <p>Public transit is the future, and it’s waiting for you! Build your career in a human field that’s productive
+        and innovative, where you’ll contribute to a new generation of mobility. At exo, we achieve our ambitions
+        through collaboration, compassion and boldness.</p>
+    </div>
+  </div>
+
+  <!-- Sections block container -->
+  <div class="block-section--container">
+    <!-- Apply exo section -->
+    <section>
+      <div class="block block--apply">
+        <h2>Apply now!</h2>
+        <div class="block--apply-exo-container">
+          <h3>Apply to job postings or send us your C.V.</h3>
+          <div class="block-container">
+            <div class="first-block-container">
+              <div class="block--text">
+                <p>Find <strong>the position or internship</strong> for you and start a unique career in public transit!
+                </p>
+              </div>
+              <div class="block--apply-exo-button first--button"><a
+                  href="https://phh.tbe.taleo.net/phh04/ats/careers/v2/jobSearch?org=AMT&cws=39"
+                  title="Link to the Taleo  web page">See the offers (In french)</a>
+              </div>
+            </div>
+            <div class="second-block-container">
+              <div class="block--text">
+                <p>Don’t find the position that interests you? <strong>Send us your C.V.</strong> and we’ll take care of
+                  the rest.</p>
+              </div>
+              <div class="block--apply-exo-button second--button"><a
+                  href="https://phh.tbe.taleo.net/phh04/ats/careers/v2/applyRequisition?org=AMT&cws=39"
+                  title="Link to the Taleo web page">Send my C.V.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apply suppliers and customers section -->
+
+        <div class="block--apply-supplier-container">
+          <div class="block-container--grey block-drivers">
+            <div class="block-container--text drivers-text">
+              <h4>Do you drive buses or trains?</h4>
+              <p>You can also join one of our many transit operators. This way to drive, repair or clean heavy vehicles!
+              </p>
+              <div class="block--apply-supplier-button first-button"><a href="/fr/a-propos/carrieres/transporteurs"
+                  title="Link to the operators web page exo (in French)">See operator offers (In french)</a></div>
+            </div>
+          </div>
+          <div class="block-container--grey block-customers">
+            <div class="block-container--text customers-text">
+              <h4>Do you like to help customers?</h4>
+              <p>Send us your C.V. to help support public transit customers every day.</p>
+              <div class="block--apply-supplier-button second-button"><a href="https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewRequisition?org=AMT&cws=39&rid=1803" title="Link to the support public offer web page">Apply here (In french)</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages section -->
+    <section>
+      <div class="block block-container--advantages">
+        <div class="block block--title title--advantages">
+          <h2>Our benefits are first-rate!</h2>
+          <p>Here are just some of the benefits you’ll enjoy when joining exo:</p>
+        </div>
+        <div class="block advantages--container">
+          <div class="block block--advantage">
+            <div class="block advantage-image--container">
+              <div class="calendar--image image-1"></div>
+            </div>
+            <div class="block--text-list">
+              <ul>
+                <li>
+                  <p><strong>Flexible</strong> work arrangements for most positions
+                  </p>
+                </li>
+                <li>
+                  <p>Maximized holidays and <strong>generous vacation</strong> days</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="block block--advantage">
+            <div class="block advantage-image--container">
+              <div class="calendar--image image-2"></div>
+            </div>
+            <div class="block--text-list">
+              <ul>
+                <li>
+                  <p>A simplified, advantageous <strong>pension plan</strong></p>
+                </li>
+                <li>
+                  <p><strong>Full group</strong> insurance coverage</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="block block--advantage">
+            <div class="block advantage-image--container">
+              <div class="calendar--image image-3"></div>
+            </div>
+            <div class="block--text-list">
+              <ul>
+                <li>
+                  <p>A <strong>telemedicine</strong> service</p>
+                </li>
+                <li>
+                  <p>An <strong>employee and family assistance program</strong></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="block block--advantage">
+            <div class="block advantage-image--container">
+              <div class="calendar--image image-4"></div>
+            </div>
+            <div class="block--text-list">
+              <ul>
+                <li>
+                  <p>Option to join the <strong>social committee</strong></p>
+                </li>
+                <li>
+                  <p>An <strong>OPUS card</strong> that covers the Greater Montreal area</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="advantages-end-text">
+          <p>And that’s not to mention participating in stimulating projects that allow you to grow both professionally
+            and personally, alongside a talented and energetic team!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diversity section -->
+    <section>
+      <div class="block block--diversity-container">
+        <div class="block block--title">
+          <h2>Diversity takes us further</h2>
+          <p>In order to counter discrimination in all forms and provide equal access to employment for everyone, we
+            adhere to the <a href="/fr/a-propos/carrieres/travailler/conditions-travail"
+              title="Link to the exo web page (in French)">Equal Access Employment Program (In french)</a>.</p>
+        </div>
+        <div class="block block--carroussel-full-container">
+          <div class="block block--carroussel-container">
+            <div class="block block--carroussel-arrow-previous"><button role="button" id="previous"
+                title="Previous slide" aria-pressed="false"></button></div>
+            <div id="carroussel-js-data--container" class="block">
+
+            </div>
+            <div class="block block--carroussel-arrow-after"><button role="button" id="next" title="Next slide"
+                aria-pressed="false"></button></div>
+          </div>
+          <div class="block--carroussel-point-container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social section -->
+    <section>
+      <div class="block block-social-container">
+        <div class="block block-social-image-container">
+          <div class="block-social-image-displayer">
+          </div>
+        </div>
+        <div class="block block-social-text-container">
+          <h2>Follow us on LinkedIn</h2>
+          <p>Find the latest exo news and see what it’s like to work with us!</p>
+        </div>
+        <div class="block block-social-link-container">
+          <p><a href="https://www.linkedin.com/company/reseaudetransportmetropolitain/"
+              title="Lien vers la page Linkedin exo">Open LinkedIn (In french)</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script>
+
+  var app = {
+
+    carrousselObjectData: [
+      { imageUrl: "Maxime-Kaci", blockquote: "The organization needs digital solutions to grow. That’s where I come in: fostering innovation to work more effectively and achieve our goals.", name: "Maxime", titleImage: "Photo of Maxime Kaci" },
+      { imageUrl: "Daniel-Valiquette", blockquote: "Our team develops innovative technical solutions with lots of uses, such as improving the customer experience aboard our trains and buses, enhancing visibility of what’s happening in real time, and providing tools to make the best possible decisions.", name: "Daniel", titleImage: "Photo of Daniel Valiquette" },
+      { imageUrl: "Audrey-Godin", blockquote: "I’m passionate about developing concrete projects to improve mobility and increase the popularity of public transit. For instance, overseeing the initial concepts for the new terminal in Châteauguay. Exo’s territory is an excellent playground!", name: "Audrey", titleImage: "Photo of Audrey Godin" },
+      { imageUrl: "Diego-Pena-Montoya", blockquote: "My daily life at exo is truly inspiring: I get to see how each small effort turns into a collective benefit.", name: "Diego", titleImage: "Photo of Diego Pena-Montoya" },
+    ],
+
+    currentQuoteindex: 0,
+
+    init: function () {
+
+      $('.block--carroussel-arrow-previous').children('button').click(app.clickToPreviousSlide);
+      $('.block--carroussel-arrow-after').children('button').click(app.clickToNextSlide);
+
+      app.displayElementWithData();
+    },
+
+    addDataToHtmlDomElement: function () {
+
+      let arrayWithDomElementToDisplay = new Array();
+
+      app.carrousselObjectData.forEach((personData, index) => {
+        arrayWithDomElementToDisplay[index] = {
+          'dom':
+            ` <div id="js-data-container--animate" class ="block">   
+                <div class="carroussel-image-container">
+                  <div class="carroussel-image-displayer" title="${personData.titleImage}">
+                  </div>
+                </div>
+                <div class="carroussel-text-container">
+                  <figure>
+                    <blockquote>
+                      <p>
+                        «${personData.blockquote}»</p>
+                    </blockquote>
+                    <figcaption>
+                      <p>- ${personData.name}</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              `, 'imageUrl': personData.imageUrl
+        };
+      });
+
+      return arrayWithDomElementToDisplay;
+    },
+
+    displayElementWithData: function () {
+
+      // app.hideOrDisplayPreviousArrow();
+
+      // app.hideOrDisplayNextArrow();
+      app.addFirstElementWithDataToDomLoaded();
+    },
+
+    // hideOrDisplayPreviousArrow: function () {
+    //   app.currentQuoteindex === 0 ? $('#previous').css('visibility', 'hidden') : $('#previous').css('visibility', 'visible');
+    // },
+
+    // hideOrDisplayNextArrow: function () {
+    //   let dataCarrousselArray = app.addDataToHtmlDomElement();
+    //   app.currentQuoteindex === dataCarrousselArray.length - 1 ? $('#next').css('visibility', 'hidden') : $('#next').css('visibility', 'visible');
+    // },
+
+    addFirstElementWithDataToDomLoaded: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+      $('#carroussel-js-data--container').append(dataCarrousselArray[app.currentQuoteindex]['dom']);
+      $('.carroussel-image-displayer').css('background-image', `url('https://exo.quebec/Media/Default/images/carriere/${dataCarrousselArray[app.currentQuoteindex]['imageUrl']}.jpg')`);
+
+      app.changeBackgroundColorSpanDotToDark();
+      app.addSlideNumberToAriaDescriptionToButtons();
+    },
+
+    addElementWithDataToDomToRight: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+      let width = app.checkWidthCarousselContainer();
+
+      $('#carroussel-js-data--container').append(dataCarrousselArray[app.currentQuoteindex]['dom']);
+      if (window.matchMedia('(min-width: 961px)').matches) {
+        $('#js-data-container--animate').css('right', `${width}px`);
+      };
+      $('.carroussel-image-displayer').css('background-image', `url('https://exo.quebec/Media/Default/images/carriere/${dataCarrousselArray[app.currentQuoteindex]['imageUrl']}.jpg')`);
+      app.changeBackgroundColorSpanDotToDark();
+      app.addSlideNumberToAriaDescriptionToButtons();
+      app.checkWindowWidthToAnimateSlide();
+    },
+
+    addElementWithDataToDomToLeft: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+      let width = app.checkWidthCarousselContainer();
+
+      $('#carroussel-js-data--container').append(dataCarrousselArray[app.currentQuoteindex]['dom']);
+      if (window.matchMedia('(min-width: 961px)').matches) {
+        $('#js-data-container--animate').css('left', `${width}px`);
+      };
+      $('.carroussel-image-displayer').css('background-image', `url('https://exo.quebec/Media/Default/images/carriere/${dataCarrousselArray[app.currentQuoteindex]['imageUrl']}.jpg')`);
+      app.changeBackgroundColorSpanDotToDark();
+      app.addSlideNumberToAriaDescriptionToButtons();
+      app.checkWindowWidthToAnimateSlide();
+    },
+
+    checkWindowWidthToAnimateSlide: function () {
+      let width = app.checkWidthCarousselContainer();
+      if (window.matchMedia('(min-width: 961px)').matches && $('#js-data-container--animate').css('left') == `${width}px`) {
+        app.animateSlideToLeft();
+      } else if (window.matchMedia('(min-width: 961px)').matches && $('#js-data-container--animate').css('right') == `${width}px`) {
+        app.animateSlideToRight();
+      }
+    },
+
+    animateSlideToLeft: function () {
+      let width = app.checkWidthCarousselContainer();
+      $('#js-data-container--animate').animate({
+        left: '-=' + width,
+      }, 2000);
+
+    },
+
+    animateSlideToRight: function () {
+      let width = app.checkWidthCarousselContainer();
+      $('#js-data-container--animate').animate({
+        right: '-=' + width,
+      }, 2000);
+    },
+
+    changeBackgroundColorSpanDotToDark: function () {
+      $(`.block--carroussel-point-container span:nth-child(${app.currentQuoteindex + 1})`).css('background-color', '#000000');
+    },
+
+    clickToNextSlide: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+
+      if (app.currentQuoteindex < dataCarrousselArray.length - 1) {
+        app.changeNextAriaPressedToTrue();
+        app.emptyCurrentQuote();
+        app.currentQuoteindex += 1;
+        app.changeNextAriaPressedToFalse();
+        app.addElementWithDataToDomToLeft();
+      } else {
+        app.changeNextAriaPressedToTrue();
+        app.emptyCurrentQuote();
+        app.currentQuoteindex = 0;
+        app.changeNextAriaPressedToFalse();
+        app.addElementWithDataToDomToLeft();
+      };
+    },
+
+    clickToPreviousSlide: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+      if (app.currentQuoteindex > 0) {
+        app.changePreviousAriaPressedToTrue();
+        app.emptyCurrentQuote();
+        app.currentQuoteindex -= 1;
+        app.changePreviousAriaPressedToFalse();
+        app.addElementWithDataToDomToRight();
+      } else {
+        app.changePreviousAriaPressedToTrue();
+        app.emptyCurrentQuote();
+        app.currentQuoteindex = dataCarrousselArray.length - 1;
+        app.changePreviousAriaPressedToFalse();
+        app.addElementWithDataToDomToRight();
+      };
+    },
+
+    emptyCurrentQuote: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+      $('#carroussel-js-data--container').empty(dataCarrousselArray[app.currentQuoteindex]['dom']);
+      app.changeBackgroundColorSpanDotToLight();
+    },
+
+    changeBackgroundColorSpanDotToLight: function () {
+      $(`.block--carroussel-point-container span:nth-child(${app.currentQuoteindex + 1})`).css('background-color', '#D9D9D9');
+    },
+
+    changeNextAriaPressedToTrue: function () {
+      $('#next').attr('aria-pressed', 'true');
+    },
+
+    changePreviousAriaPressedToTrue: function () {
+      $('#previous').attr('aria-pressed', 'true');
+    },
+
+    changeNextAriaPressedToFalse: function () {
+      setTimeout(function () {
+        $('#next').attr('aria-pressed', 'false');
+      }, 1000);
+    },
+
+    changePreviousAriaPressedToFalse: function () {
+      setTimeout(function () {
+        $('#previous').attr('aria-pressed', 'false');
+      }, 1000);
+    },
+
+    addSlideNumberToAriaDescriptionToButtons: function () {
+      let dataCarrousselArray = app.addDataToHtmlDomElement();
+      $('.block--carroussel-container button').attr('aria-label', `Slide number ${app.currentQuoteindex + 1} on ${dataCarrousselArray.length}`);
+    },
+
+    checkWidthCarousselContainer: function () {
+      return $('#carroussel-js-data--container').width();
+    },
+  };
+
+  $(document).ready(app.init);
+</script>
+
+<!--
+  /*
+  * PAGE CONTENT ENDS HERE
+  */
+  -->
